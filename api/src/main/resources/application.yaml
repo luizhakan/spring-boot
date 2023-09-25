@@ -4,3 +4,14 @@ spring:
     url: jdbc:mysql://localhost:3306/vollmed_api
     username: estudos
     password: Luizteste123
+  data:
+    web:
+      pageable:
+        page-parameter: pagina
+        size-parameter: tamanho
+        sort-parameter: ordem
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
