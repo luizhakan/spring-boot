@@ -2,6 +2,7 @@ create table medicos (
     id bigint not null auto_increment,
     nome VARCHAR(100) not null,
     email VARCHAR(100) not null unique,
+    telefone varchar(20) not null unique,
     crm VARCHAR(6) not null unique,
     especialidade VARCHAR(100) not null,
     logradouro VARCHAR(100) not null,
@@ -11,6 +12,7 @@ create table medicos (
     numero VARCHAR(10) not null,
     uf VARCHAR(2) not null,
     cidade VARCHAR(100) not null,
+    ativo tinyint not null,
 
     PRIMARY KEY (id)
-);
+)
