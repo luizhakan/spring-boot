@@ -52,6 +52,9 @@ public class Profissional {
         if (dados.endereco() != null) {
             this.endereco.atualizarInformacoes(dados.endereco());
         }
+        if (dados.especialidade() != null) {
+            this.especialidade = dados.especialidade();
+        }
     }
 
     public void excluir() {
